@@ -19,7 +19,7 @@ class GameGLSurfaceView(context: Context) : GLSurfaceView(context) {
         setEGLContextClientVersion(3)
         setEGLConfigChooser(8, 8, 8, 8, 16, 0)
         preserveEGLContextOnPause = true
-        renderer = object : Renderer {
+        setRenderer(object : Renderer {
             override fun onSurfaceCreated(gl: GL10?, config: EGLConfig?) {
                 NativeLib.onSurfaceCreated()
                 NativeLib.setGraphicsQuality(Prefs.graphicsQuality)
@@ -33,7 +33,7 @@ class GameGLSurfaceView(context: Context) : GLSurfaceView(context) {
                     mainHandler.post { onPlayerFell?.invoke() }
                 }
             }
-        }
+        })
         renderMode = RENDERMODE_CONTINUOUSLY
     }
 
