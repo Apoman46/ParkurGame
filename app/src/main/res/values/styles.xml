@@ -1,0 +1,19 @@
+<resources>
+    <style name="Theme.ParkurGame" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+    </style>
+
+    <style name="MenuButton">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+</resources>

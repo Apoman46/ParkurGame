@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textColor="@color/accent"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/panel_bg" android:orientation="vertical" android:padding="20dp">
+
+        <TextView android:id="@+id/lblSfx" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/sfx_volume" android:textColor="@color/white" android:textSize="16sp"/>
+        <SeekBar android:id="@+id/seekSfx" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:max="100" android:progressTint="@color/accent" android:thumbTint="@color/accent"/>
+
+        <TextView android:id="@+id/lblMusic" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="@string/music_volume" android:textColor="@color/white" android:textSize="16sp"/>
+        <SeekBar android:id="@+id/seekMusic" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:max="100" android:progressTint="@color/accent" android:thumbTint="@color/accent"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="@string/graphics_quality" android:textColor="@color/white" android:textSize="16sp"/>
+        <RadioGroup android:id="@+id/radioGraphics" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="6dp">
+            <RadioButton android:id="@+id/radioLow" android:text="@string/low" android:textColor="@color/white" android:layout_marginEnd="18dp"/>
+            <RadioButton android:id="@+id/radioMedium" android:text="@string/medium" android:textColor="@color/white" android:layout_marginEnd="18dp"/>
+            <RadioButton android:id="@+id/radioHigh" android:text="@string/high" android:textColor="@color/white"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button android:id="@+id/btnBack" style="@style/MenuButton" android:text="@string/back" android:layout_marginTop="24dp"/>
+</LinearLayout>

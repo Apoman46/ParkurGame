@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Spiral Parkur</string>
+    <string name="play">OYNA</string>
+    <string name="settings">AYARLAR</string>
+    <string name="shop">MAĞAZA</string>
+    <string name="back">GERİ</string>
+    <string name="sfx_volume">Ses Efekti Seviyesi</string>
+    <string name="music_volume">Müzik Seviyesi</string>
+    <string name="graphics_quality">Grafik Kalitesi</string>
+    <string name="low">Düşük</string>
+    <string name="medium">Orta</string>
+    <string name="high">Yüksek</string>
+    <string name="coins">Jeton</string>
+    <string name="select">SEÇ</string>
+    <string name="selected">SEÇİLİ</string>
+    <string name="locked">KİLİTLİ</string>
+    <string name="score">Skor</string>
+    <string name="game_over">OYUN BİTTİ</string>
+    <string name="retry">TEKRAR DENE</string>
+    <string name="menu">ANA MENÜ</string>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <FrameLayout
+        android:id="@+id/glContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="0 m"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Sol / sağ dönüş kontrolleri -->
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_button"
+        android:text="◀"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_toEndOf="@id/btnLeft"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/round_button"
+        android:text="▶"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnJump"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_button"
+        android:text="ZIPLA"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="14dp"
+        android:background="@drawable/round_button"
+        android:text="II"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/gameOverPanel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/panel_bg"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/gameOverTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_over"
+            android:textColor="@color/danger"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/finalScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <Button android:id="@+id/btnRetry" style="@style/MenuButton"
+            android:layout_width="220dp" android:layout_height="52dp"
+            android:text="@string/retry" />
+
+        <Button android:id="@+id/btnToMenu" style="@style/MenuButton"
+            android:layout_width="220dp" android:layout_height="52dp"
+            android:text="@string/menu" />
+    </LinearLayout>
+
+</RelativeLayout>
